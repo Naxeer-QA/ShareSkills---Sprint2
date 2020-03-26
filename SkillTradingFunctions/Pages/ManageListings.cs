@@ -31,18 +31,18 @@ namespace SkillTradingFunctions
             EditCategory.Click();
             EditCategory.GetAttribute("Writing & Translation");
 
-            IWebElement EditSubCategory = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[3]/div[2]/div/div[2]/div[1]/select/option[4]"));
             System.Threading.Thread.Sleep(2000);
+            IWebElement EditSubCategory = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[3]/div[2]/div/div[2]/div[1]/select/option[4]"));
             EditSubCategory.Click();
             EditSubCategory.GetAttribute("QA");
 
-            System.Threading.Thread.Sleep(2000);
-            IWebElement RemoveTag1 = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[4]/div[2]/div/div/div/span[2]/a"));
-            RemoveTag1.Click();
+            //System.Threading.Thread.Sleep(2000);
+            //IWebElement RemoveTag1 = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[4]/div[2]/div/div/div/span[2]/a"));
+            //RemoveTag1.Click();
 
-            System.Threading.Thread.Sleep(2000);
-            IWebElement RemoveTag2 = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[4]/div[2]/div/div/div/span[1]/a"));
-            RemoveTag2.Click();
+            //System.Threading.Thread.Sleep(2000);
+            //IWebElement RemoveTag2 = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[4]/div[2]/div/div/div/span[1]/a"));
+            //RemoveTag2.Click();
 
             IWebElement EnterTag = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[4]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]"));
             EnterTag.SendKeys("QA Automator");
@@ -58,29 +58,29 @@ namespace SkillTradingFunctions
             IWebElement LocationTypeSelection = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[6]/div[2]/div/div[2]/div/input"));
             LocationTypeSelection.Click();
 
-            IWebElement ClearStartDate = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[1]/div[2]/input[1]"));
-            ClearStartDate.Clear();
+            //IWebElement ClearStartDate = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[1]/div[2]/input[1]"));
+            //ClearStartDate.Clear();
 
-            IWebElement StartDate = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[1]/div[2]/input[1]"));
-            StartDate.SendKeys("25/03/2020");
+            //IWebElement StartDate = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[1]/div[2]/input[1]"));
+            //StartDate.SendKeys("25/03/2020");
             //StartDate.SendKeys("02");
             //StartDate.SendKeys("2020");
 
-            IWebElement ClearEndDate = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[1]/div[4]/input[1]"));
-            ClearEndDate.Clear();
+            //IWebElement ClearEndDate = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[1]/div[4]/input[1]"));
+            //ClearEndDate.Clear();
 
-            IWebElement EndDate = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[1]/div[4]/input[1]"));
-            EndDate.SendKeys("30/04/2020");
+            //IWebElement EndDate = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[1]/div[4]/input[1]"));
+            //EndDate.SendKeys("30/04/2020");
 
             //Sunday - Checks the day and defines the timing
-            IWebElement SundayAvailable = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[2]/div[1]/div[1]/input[1]"));
-            SundayAvailable.Click();
-            IWebElement SundayStartTime = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[2]/div[2]/input[1]"));
-            SundayStartTime.SendKeys("09:00");
-            SundayStartTime.SendKeys("AM");
-            IWebElement SundayEndTime = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[2]/div[3]/input[1]"));
-            SundayEndTime.SendKeys("05:00");
-            SundayEndTime.SendKeys("PM");
+            //IWebElement SundayAvailable = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[2]/div[1]/div[1]/input[1]"));
+            //SundayAvailable.Click();
+            //IWebElement SundayStartTime = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[2]/div[2]/input[1]"));
+            //SundayStartTime.SendKeys("09:00");
+            //SundayStartTime.SendKeys("AM");
+            //IWebElement SundayEndTime = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[2]/div[3]/input[1]"));
+            //SundayEndTime.SendKeys("05:00");
+            //SundayEndTime.SendKeys("PM");
 
             //Monday - Unchecks the day and removes the timing values
             //System.Threading.Thread.Sleep(2000);
@@ -94,17 +94,17 @@ namespace SkillTradingFunctions
             //MondayEndTime.Clear();
 
             //Tuesday - Checks the day and defines the timing
-            System.Threading.Thread.Sleep(2000);
-            IWebElement TuesdayAvailable = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[4]/div[1]/div[1]/input[1]"));
-            TuesdayAvailable.Click();
-            System.Threading.Thread.Sleep(2000);
-            IWebElement TuesdayStartTime = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[4]/div[2]/input[1]"));
-            TuesdayStartTime.SendKeys("09:00");
-            TuesdayStartTime.SendKeys("AM");
-            System.Threading.Thread.Sleep(2000);
-            IWebElement TuesdayEndTime = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[4]/div[3]/input[1]"));
-            TuesdayEndTime.SendKeys("05:00");
-            TuesdayEndTime.SendKeys("PM");
+            //System.Threading.Thread.Sleep(2000);
+            //IWebElement TuesdayAvailable = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[4]/div[1]/div[1]/input[1]"));
+            //TuesdayAvailable.Click();
+            //System.Threading.Thread.Sleep(2000);
+            //IWebElement TuesdayStartTime = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[4]/div[2]/input[1]"));
+            //TuesdayStartTime.SendKeys("09:00");
+            //TuesdayStartTime.SendKeys("AM");
+            //System.Threading.Thread.Sleep(2000);
+            //IWebElement TuesdayEndTime = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[4]/div[3]/input[1]"));
+            //TuesdayEndTime.SendKeys("05:00");
+            //TuesdayEndTime.SendKeys("PM");
 
             //Wednesday - Unchecks the day and removes the timing values
             //System.Threading.Thread.Sleep(2000);
@@ -118,17 +118,17 @@ namespace SkillTradingFunctions
             //WedEndTime.Clear();
 
             //Thursday - Checks the day and defines the timing
-            System.Threading.Thread.Sleep(2000);
-            IWebElement ThursdayAvailable = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[6]/div[1]/div[1]/input[1]"));
-            ThursdayAvailable.Click();
-            System.Threading.Thread.Sleep(2000);
-            IWebElement ThursdayStartTime = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[6]/div[2]/input[1]"));
-            ThursdayStartTime.SendKeys("09:00");
-            ThursdayStartTime.SendKeys("AM");
-            System.Threading.Thread.Sleep(2000);
-            IWebElement ThursdayEndTime = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[6]/div[3]/input[1]"));
-            ThursdayEndTime.SendKeys("05:00");
-            ThursdayEndTime.SendKeys("PM");
+            //System.Threading.Thread.Sleep(2000);
+            //IWebElement ThursdayAvailable = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[6]/div[1]/div[1]/input[1]"));
+            //ThursdayAvailable.Click();
+            //System.Threading.Thread.Sleep(2000);
+            //IWebElement ThursdayStartTime = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[6]/div[2]/input[1]"));
+            //ThursdayStartTime.SendKeys("09:00");
+            //ThursdayStartTime.SendKeys("AM");
+            //System.Threading.Thread.Sleep(2000);
+            //IWebElement ThursdayEndTime = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]/div[6]/div[3]/input[1]"));
+            //ThursdayEndTime.SendKeys("05:00");
+            //ThursdayEndTime.SendKeys("PM");
 
             //Friday - Unchecks the day and removes the timing values
             //System.Threading.Thread.Sleep(1000);
@@ -158,23 +158,6 @@ namespace SkillTradingFunctions
             //Saving the service
             IWebElement SaveServiceBtn = driver.FindElement(By.XPath("//input[@class='ui teal button']"));
             SaveServiceBtn.Click();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         }
     }

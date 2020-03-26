@@ -11,21 +11,26 @@ namespace SkillTradingFunctions
             IWebElement MListingsTab = driver.FindElement(By.XPath("//a[contains(text(),'Manage Listings')]"));
             MListingsTab.Click();
 
-            System.Threading.Thread.Sleep(2000);
-            IWebElement viewService = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[8]/div[1]/button[1]/i[1]"));
+            System.Threading.Thread.Sleep(4000);
+            IWebElement viewService = driver.FindElement(By.XPath("//tr[1]//td[8]//div[1]//button[1]//i[1]"));
             viewService.Click();
 
-            System.Threading.Thread.Sleep(2000);
-            IWebElement ChatBtn = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/a[1]"));
-            ChatBtn.Click();
+            //Before the website was updated, this feature was functioning correctly. This seems to be depricated as of now.
+            //System.Threading.Thread.Sleep(2000);
+            //IWebElement ChatBtn = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/a[1]"));
+            //ChatBtn.Click();
+
+            //System.Threading.Thread.Sleep(2000);
+            //IWebElement MsgInput = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]"));
+            //MsgInput.SendKeys("Just for Testing purpose");
+
+            //System.Threading.Thread.Sleep(2000);
+            //IWebElement SendBtn = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/button[2]"));
+            //SendBtn.Click();
 
             System.Threading.Thread.Sleep(2000);
-            IWebElement MsgInput = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]"));
-            MsgInput.SendKeys("Just for Testing purpose");
-
-            System.Threading.Thread.Sleep(2000);
-            IWebElement SendBtn = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/button[2]"));
-            SendBtn.Click();
+            IWebElement ClickCamera = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/a[1]/i[1]"));
+            ClickCamera.Click();
 
             System.Threading.Thread.Sleep(2000);
             IWebElement MListingsTabback= driver.FindElement(By.XPath("//a[contains(text(),'Manage Listings')]"));

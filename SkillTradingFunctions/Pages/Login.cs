@@ -11,17 +11,20 @@ namespace SkillTradingFunctions
     {
         public void LoginSuccess(IWebDriver driver)
         {
-            driver.Navigate().GoToUrl("http://www.skillswap.pro/");
+            System.Threading.Thread.Sleep(5000);
+            Utilities.ExcelLibHelpers.PopulateInCollection(@"D:\IndustryConnect\Automation\MVP_MARSproject\Sprint_2\SkillTradingFunctions\SkillTradingFunctions\TestData\TestData.xlsx","LoginPage");
 
-            System.Threading.Thread.Sleep(2000);
+            driver.Navigate().GoToUrl("http://localhost:5000/");
+
+            System.Threading.Thread.Sleep(5000);
             IWebElement SignIn = driver.FindElement(By.XPath("//a[contains(.,'Sign In')]"));
             SignIn.Click();
 
             IWebElement Email = driver.FindElement(By.XPath("//input[contains(@placeholder,'Email address')]"));
-            Email.SendKeys("nazmohammed.nz@gmail.com");
+            Email.SendKeys(Utilities.ExcelLibHelpers.ReadData(2,"Username"));
 
             IWebElement password = driver.FindElement(By.XPath("//input[contains(@type,'password')]"));
-            password.SendKeys("password2");
+            password.SendKeys(Utilities.ExcelLibHelpers.ReadData(2,"Password"));
 
             IWebElement loginBtn = driver.FindElement(By.XPath("//button[contains(.,'Login')]"));
             loginBtn.Click();
